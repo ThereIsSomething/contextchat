@@ -1,8 +1,14 @@
+[![repo size](https://img.shields.io/github/repo-size/ThereIsSomething/books.svg)](https://github.com/ThereIsSomething/contextchat/archive/refs/heads/master.zip) [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://contextchat-two.vercel.app) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/NBhambu)
+
+
 # ContextChat
 
 A minimal, production-ready MERN (MongoDB, Express, React, Node.js) real-time messaging MVP where conversations are organized by contexts (projects/topics) instead of contacts.
 
-Live demo: add links after deployment
+Live demo: https://contextchat-two.vercel.app/
+
+#Frontend deployed on VERCEL
+#Backend Deployed on RENDER
 
 ## Tech Stack
 - Backend: Node.js, Express, MongoDB (Mongoose), Socket.IO, JWT, bcryptjs, dotenv, CORS
@@ -203,8 +209,3 @@ Steps:
 4) Verify Socket.IO
    - Open DevTools → Network → filter `socket.io` and confirm it upgrades to `websocket`.
    - If it stays on polling or fails, ensure both the frontend URL you open and the backend CORS `CLIENT_ORIGIN` include the same `http://192.168.1.10:5173` origin.
-
-Troubleshooting:
-- Use the same Wi‑Fi for all devices and ensure OS firewall allows inbound connections on ports 5173 and your backend port (e.g., 8989).
-- If you open the client at `http://127.0.0.1:5173` or `http://localhost:5173` from another device, it won't work—use the LAN IP.
-- If sockets fail authentication, log out and log back in on that device to refresh the JWT.
